@@ -1,0 +1,26 @@
+{
+  "_note": "Build areas are UNVERIFIED (from search listings). Phase 0 replaces them with measured values. null = unknown, skipped by tools.",
+  "printers": {
+    "sprintray-pro-2": {
+      "name": "SprintRay Pro 2",
+      "plateX": 188,
+      "plateY": 105,
+      "maxZ": 200,
+      "verified": false
+    },
+    "sprintray-pro-95s": {
+      "name": "SprintRay Pro 95 S",
+      "plateX": 182,
+      "plateY": 102,
+      "maxZ": 200,
+      "verified": false
+    },
+    "sprintray-pro-55s": {
+      "name": "SprintRay Pro 55 S",
+      "plateX": null,
+      "plateY": null,
+      "maxZ": null,
+      "verified": false
+    }
+  }
+}

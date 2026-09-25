@@ -1,0 +1,538 @@
+{
+  "generated": "2026-09-25",
+  "units": "mm",
+  "printers": {
+    "sprintray-pro-2": {
+      "name": "SprintRay Pro 2",
+      "plate": [
+        188,
+        105,
+        200
+      ],
+      "plates": {
+        "corner": {
+          "plateSpans": [
+            [
+              0,
+              188
+            ],
+            [
+              0,
+              105
+            ]
+          ],
+          "parts": [
+            {
+              "id": "P1",
+              "part": "L3",
+              "desc": "L-block, 3 mm tall (mirror check: must read as L, not J, from above)",
+              "spinZ": 0,
+              "tiltX": 0,
+              "bboxMin": [
+                5,
+                5,
+                0
+              ],
+              "bboxMax": [
+                25,
+                19,
+                3
+              ],
+              "checks": "near the X0/Y0 corner — reveals origin placement",
+              "file": "option1-separate/P1_L3.stl"
+            },
+            {
+              "id": "P2",
+              "part": "ARCH12",
+              "desc": "Arch-shaped model stand-in, 12 mm tall",
+              "spinZ": 30,
+              "tiltX": 0,
+              "bboxMin": [
+                75.2,
+                21,
+                0
+              ],
+              "bboxMax": [
+                134.17,
+                72.15,
+                12
+              ],
+              "checks": "rotated 30° about Z — reveals rotation kept or reset",
+              "file": "option1-separate/P2_ARCH12.stl"
+            },
+            {
+              "id": "P3",
+              "part": "CROWN8",
+              "desc": "Octagonal crown stand-in, 8 mm tall",
+              "spinZ": 0,
+              "tiltX": 0,
+              "bboxMin": [
+                173,
+                90,
+                0
+              ],
+              "bboxMax": [
+                183,
+                100,
+                8
+              ],
+              "checks": "near the far corner — with P1, reveals scaling/recentering",
+              "file": "option1-separate/P3_CROWN8.stl"
+            },
+            {
+              "id": "P4",
+              "part": "GUARD3",
+              "desc": "Thin arch (guard stand-in), 3 mm, tilted 45°, floating 5 mm above the plate",
+              "spinZ": 0,
+              "tiltX": 45,
+              "bboxMin": [
+                15.04,
+                57.75,
+                5
+              ],
+              "bboxMax": [
+                70.99,
+                84.79,
+                32.04
+              ],
+              "checks": "tilted + floating — reveals whether Z is dropped to the plate",
+              "file": "option1-separate/P4_GUARD3.stl"
+            },
+            {
+              "id": "P5",
+              "part": "L5",
+              "desc": "L-block, 5 mm tall",
+              "spinZ": 90,
+              "tiltX": 0,
+              "bboxMin": [
+                146.64,
+                10.5,
+                0
+              ],
+              "bboxMax": [
+                160.64,
+                30.5,
+                5
+              ],
+              "checks": "rotated 90° — second rotation check",
+              "file": "option1-separate/P5_L5.stl"
+            }
+          ],
+          "merged": "option2-merged/plate_merged.stl"
+        },
+        "center": {
+          "plateSpans": [
+            [
+              -94,
+              94
+            ],
+            [
+              -52.5,
+              52.5
+            ]
+          ],
+          "parts": [
+            {
+              "id": "P1",
+              "part": "L3",
+              "desc": "L-block, 3 mm tall (mirror check: must read as L, not J, from above)",
+              "spinZ": 0,
+              "tiltX": 0,
+              "bboxMin": [
+                -89,
+                -47.5,
+                0
+              ],
+              "bboxMax": [
+                -69,
+                -33.5,
+                3
+              ],
+              "checks": "near the X0/Y0 corner — reveals origin placement",
+              "file": "option1-separate/P1_L3.stl"
+            },
+            {
+              "id": "P2",
+              "part": "ARCH12",
+              "desc": "Arch-shaped model stand-in, 12 mm tall",
+              "spinZ": 30,
+              "tiltX": 0,
+              "bboxMin": [
+                -18.8,
+                -31.5,
+                0
+              ],
+              "bboxMax": [
+                40.17,
+                19.65,
+                12
+              ],
+              "checks": "rotated 30° about Z — reveals rotation kept or reset",
+              "file": "option1-separate/P2_ARCH12.stl"
+            },
+            {
+              "id": "P3",
+              "part": "CROWN8",
+              "desc": "Octagonal crown stand-in, 8 mm tall",
+              "spinZ": 0,
+              "tiltX": 0,
+              "bboxMin": [
+                79,
+                37.5,
+                0
+              ],
+              "bboxMax": [
+                89,
+                47.5,
+                8
+              ],
+              "checks": "near the far corner — with P1, reveals scaling/recentering",
+              "file": "option1-separate/P3_CROWN8.stl"
+            },
+            {
+              "id": "P4",
+              "part": "GUARD3",
+              "desc": "Thin arch (guard stand-in), 3 mm, tilted 45°, floating 5 mm above the plate",
+              "spinZ": 0,
+              "tiltX": 45,
+              "bboxMin": [
+                -78.96,
+                5.25,
+                5
+              ],
+              "bboxMax": [
+                -23.01,
+                32.29,
+                32.04
+              ],
+              "checks": "tilted + floating — reveals whether Z is dropped to the plate",
+              "file": "option1-separate/P4_GUARD3.stl"
+            },
+            {
+              "id": "P5",
+              "part": "L5",
+              "desc": "L-block, 5 mm tall",
+              "spinZ": 90,
+              "tiltX": 0,
+              "bboxMin": [
+                52.64,
+                -42,
+                0
+              ],
+              "bboxMax": [
+                66.64,
+                -22,
+                5
+              ],
+              "checks": "rotated 90° — second rotation check",
+              "file": "option1-separate/P5_L5.stl"
+            }
+          ],
+          "merged": "option2-merged/plate_merged.stl"
+        }
+      },
+      "probes": [
+        {
+          "pct": 98,
+          "size": [
+            184.24,
+            102.9,
+            1
+          ],
+          "file": "probes/probe_98pct_184.2x102.9.stl"
+        },
+        {
+          "pct": 100,
+          "size": [
+            188,
+            105,
+            1
+          ],
+          "file": "probes/probe_100pct_188.0x105.0.stl"
+        },
+        {
+          "pct": 102,
+          "size": [
+            191.76,
+            107.1,
+            1
+          ],
+          "file": "probes/probe_102pct_191.8x107.1.stl"
+        }
+      ]
+    },
+    "sprintray-pro-95s": {
+      "name": "SprintRay Pro 95 S",
+      "plate": [
+        182,
+        102,
+        200
+      ],
+      "plates": {
+        "corner": {
+          "plateSpans": [
+            [
+              0,
+              182
+            ],
+            [
+              0,
+              102
+            ]
+          ],
+          "parts": [
+            {
+              "id": "P1",
+              "part": "L3",
+              "desc": "L-block, 3 mm tall (mirror check: must read as L, not J, from above)",
+              "spinZ": 0,
+              "tiltX": 0,
+              "bboxMin": [
+                5,
+                5,
+                0
+              ],
+              "bboxMax": [
+                25,
+                19,
+                3
+              ],
+              "checks": "near the X0/Y0 corner — reveals origin placement",
+              "file": "option1-separate/P1_L3.stl"
+            },
+            {
+              "id": "P2",
+              "part": "ARCH12",
+              "desc": "Arch-shaped model stand-in, 12 mm tall",
+              "spinZ": 30,
+              "tiltX": 0,
+              "bboxMin": [
+                72.8,
+                20.4,
+                0
+              ],
+              "bboxMax": [
+                131.77,
+                71.55,
+                12
+              ],
+              "checks": "rotated 30° about Z — reveals rotation kept or reset",
+              "file": "option1-separate/P2_ARCH12.stl"
+            },
+            {
+              "id": "P3",
+              "part": "CROWN8",
+              "desc": "Octagonal crown stand-in, 8 mm tall",
+              "spinZ": 0,
+              "tiltX": 0,
+              "bboxMin": [
+                167,
+                87,
+                0
+              ],
+              "bboxMax": [
+                177,
+                97,
+                8
+              ],
+              "checks": "near the far corner — with P1, reveals scaling/recentering",
+              "file": "option1-separate/P3_CROWN8.stl"
+            },
+            {
+              "id": "P4",
+              "part": "GUARD3",
+              "desc": "Thin arch (guard stand-in), 3 mm, tilted 45°, floating 5 mm above the plate",
+              "spinZ": 0,
+              "tiltX": 45,
+              "bboxMin": [
+                14.56,
+                56.1,
+                5
+              ],
+              "bboxMax": [
+                70.51,
+                83.14,
+                32.04
+              ],
+              "checks": "tilted + floating — reveals whether Z is dropped to the plate",
+              "file": "option1-separate/P4_GUARD3.stl"
+            },
+            {
+              "id": "P5",
+              "part": "L5",
+              "desc": "L-block, 5 mm tall",
+              "spinZ": 90,
+              "tiltX": 0,
+              "bboxMin": [
+                141.96,
+                10.2,
+                0
+              ],
+              "bboxMax": [
+                155.96,
+                30.2,
+                5
+              ],
+              "checks": "rotated 90° — second rotation check",
+              "file": "option1-separate/P5_L5.stl"
+            }
+          ],
+          "merged": "option2-merged/plate_merged.stl"
+        },
+        "center": {
+          "plateSpans": [
+            [
+              -91,
+              91
+            ],
+            [
+              -51,
+              51
+            ]
+          ],
+          "parts": [
+            {
+              "id": "P1",
+              "part": "L3",
+              "desc": "L-block, 3 mm tall (mirror check: must read as L, not J, from above)",
+              "spinZ": 0,
+              "tiltX": 0,
+              "bboxMin": [
+                -86,
+                -46,
+                0
+              ],
+              "bboxMax": [
+                -66,
+                -32,
+                3
+              ],
+              "checks": "near the X0/Y0 corner — reveals origin placement",
+              "file": "option1-separate/P1_L3.stl"
+            },
+            {
+              "id": "P2",
+              "part": "ARCH12",
+              "desc": "Arch-shaped model stand-in, 12 mm tall",
+              "spinZ": 30,
+              "tiltX": 0,
+              "bboxMin": [
+                -18.2,
+                -30.6,
+                0
+              ],
+              "bboxMax": [
+                40.77,
+                20.55,
+                12
+              ],
+              "checks": "rotated 30° about Z — reveals rotation kept or reset",
+              "file": "option1-separate/P2_ARCH12.stl"
+            },
+            {
+              "id": "P3",
+              "part": "CROWN8",
+              "desc": "Octagonal crown stand-in, 8 mm tall",
+              "spinZ": 0,
+              "tiltX": 0,
+              "bboxMin": [
+                76,
+                36,
+                0
+              ],
+              "bboxMax": [
+                86,
+                46,
+                8
+              ],
+              "checks": "near the far corner — with P1, reveals scaling/recentering",
+              "file": "option1-separate/P3_CROWN8.stl"
+            },
+            {
+              "id": "P4",
+              "part": "GUARD3",
+              "desc": "Thin arch (guard stand-in), 3 mm, tilted 45°, floating 5 mm above the plate",
+              "spinZ": 0,
+              "tiltX": 45,
+              "bboxMin": [
+                -76.44,
+                5.1,
+                5
+              ],
+              "bboxMax": [
+                -20.49,
+                32.14,
+                32.04
+              ],
+              "checks": "tilted + floating — reveals whether Z is dropped to the plate",
+              "file": "option1-separate/P4_GUARD3.stl"
+            },
+            {
+              "id": "P5",
+              "part": "L5",
+              "desc": "L-block, 5 mm tall",
+              "spinZ": 90,
+              "tiltX": 0,
+              "bboxMin": [
+                50.96,
+                -40.8,
+                0
+              ],
+              "bboxMax": [
+                64.96,
+                -20.8,
+                5
+              ],
+              "checks": "rotated 90° — second rotation check",
+              "file": "option1-separate/P5_L5.stl"
+            }
+          ],
+          "merged": "option2-merged/plate_merged.stl"
+        }
+      },
+      "probes": [
+        {
+          "pct": 98,
+          "size": [
+            178.36,
+            99.96,
+            1
+          ],
+          "file": "probes/probe_98pct_178.4x100.0.stl"
+        },
+        {
+          "pct": 100,
+          "size": [
+            182,
+            102,
+            1
+          ],
+          "file": "probes/probe_100pct_182.0x102.0.stl"
+        },
+        {
+          "pct": 102,
+          "size": [
+            185.64,
+            104.04,
+            1
+          ],
+          "file": "probes/probe_102pct_185.6x104.0.stl"
+        }
+      ]
+    }
+  },
+  "densitySet": {
+    "arches": 10,
+    "crowns": 20,
+    "archFootprintMm": [
+      59.94,
+      37.76,
+      12
+    ],
+    "crownFootprintMm": [
+      10,
+      10,
+      8
+    ]
+  }
+}
