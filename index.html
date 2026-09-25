@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plate Viewer</title>
+  </head>
+  <body>
+    <aside class="panel">
+      <header>
+        <h1>Plate Viewer</h1>
+        <p class="hint">Files open in this browser only. Nothing is uploaded.</p>
+      </header>
+
+      <label class="field">
+        <span>Plate</span>
+        <select id="plate-select"></select>
+      </label>
+
+      <div class="row">
+        <button id="open-btn" type="button">Open STL files…</button>
+        <input id="file-input" type="file" accept=".stl" multiple hidden />
+      </div>
+
+      <label class="field">
+        <span>Printer</span>
+        <select id="printer-select"></select>
+      </label>
+
+      <fieldset class="field">
+        <legend>Plate origin</legend>
+        <label><input type="radio" name="origin" value="corner" checked /> Corner</label>
+        <label><input type="radio" name="origin" value="center" /> Center</label>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>View</legend>
+        <label><input type="radio" name="view" value="top" checked /> Top</label>
+        <label><input type="radio" name="view" value="3d" /> 3D</label>
+      </fieldset>
+
+      <p id="summary" class="summary"></p>
+      <div class="table-wrap">
+        <table id="parts">
+          <thead>
+            <tr><th></th><th>Part</th><th>Size X×Y×Z (mm)</th><th>Min corner (mm)</th><th>Status</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="hint">Plate sizes are unverified until the Phase 0 build-area test measures them.</p>
+    </aside>
+
+    <main id="stage">
+      <div id="drop-hint">Drop STL files anywhere</div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

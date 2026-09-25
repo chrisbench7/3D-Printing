@@ -2,6 +2,8 @@
 
 Synthetic, PHI-free test parts that answer the spec's go/no-go question: **does a nested plate survive import into RayWare?** Nothing here needs printing — every test is import-and-look (plus one optional print).
 
+**Preview first:** the plate viewer (`npm run dev`, or the GitHub Pages site once enabled) shows every plate here with each part's expected position, so you can compare it side by side with RayWare's screen.
+
 Regenerate with `node tools/phase0/generate.mjs` (no dependencies). Plate sizes come from [`config/printers.json`](../config/printers.json) and are **unverified**; test 3 measures them. Expected coordinates for every part are in [`manifest.json`](manifest.json).
 
 ## What's here

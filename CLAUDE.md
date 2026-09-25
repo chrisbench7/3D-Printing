@@ -16,6 +16,18 @@ Spec + Phase 0 test plates. **Now: Phase 0 spike** — test plates and procedure
 | 4 | Saved cases, plate sheets, model labels | ⚪ |
 | 5 | 3D smile design — additive mockup model | ⚪ Blocked on regulatory review |
 
+## Running it
+
+```bash
+npm install
+npm run dev        # plate viewer at http://localhost:5173
+npm test           # Vitest: geometry checks + Phase 0 plate fixtures
+npm run build      # typecheck + static build to dist/
+npm run phase0     # regenerate phase0/ test plates
+```
+
+The **plate viewer** (`index.html`, `src/`) is the first slice of the app: it shows the bundled Phase 0 plates or local STL files (open or drag-drop — read in the browser, never uploaded) on a printer's plate, with per-part size, position and placement checks (off plate, floating, not closed, overlapping). Pure mesh logic lives in `src/geometry.ts` so it can move into workers and stay testable. CI (`.github/workflows/ci.yml`) runs tests + build; `pages.yml` deploys the viewer to GitHub Pages on every push to `main`.
+
 ## What this is
 
 A browser-only app that nests dental STLs (occlusal guards, surgical guides, models, temporaries, smile-design mockups) onto SprintRay DLP build plates, then hands the plate to RayWare, which keeps doing supports and slicing. Smile design comes in two stages: 2D on patient photos first, 3D on the scan later.
